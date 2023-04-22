@@ -720,7 +720,7 @@ footer {
     font-size: 2.3rem;
   }
 
-  .events-contents {
+  .events-content {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
@@ -789,8 +789,8 @@ footer {
     margin: 3rem 0 6rem;
   }
 
-  .summit-1,
-  .summit-2 {
+  .meeting-start,
+  .meeting-middle {
     height: 70vh;
     max-height: 70vh;
   }

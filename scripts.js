@@ -1,7 +1,7 @@
 // Select the hamburger icon and the navigation menu element from the DOM
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
+const navLink = document.querySelectorAll('.nav-link');
 
 // Define the mobileMenu() that toggles the 'active' class on the hamburger icon and the nav menu
 function mobileMenu() {
@@ -24,8 +24,10 @@ function closeMenu() {
 navLink.forEach((n) => n.addEventListener('click', closeMenu));
 
 // CREATING FEATURED SPEAKER SECTION DYNAMICALLY
-const speakers = document.querySelector('.features-speakers');
+// Select the speakers element using the class name
+const speakers = document.querySelector('.guest-speakers');
 
+// Define an array of speaker details
 const speakersDetails = [
   {
     id: 1,
@@ -33,7 +35,7 @@ const speakersDetails = [
     title: 'CEO, Victory Drugs Limited.',
     speakerImg: 'images/Folashade-lawal.png',
     about:
-      'Pharm. Folash Lawal is the CEO of Victory Limited. A leading community Pharmacy in FESTAC, Lagos',
+      'Pharm. Folash Lawal is the CEO of Victory Drugs Limited. A leading community Pharmacy in FESTAC Town, Lagos',
   },
   {
     id: 2,
@@ -55,7 +57,7 @@ const speakersDetails = [
     id: 4,
     name: 'Chidi Okoro',
     title: 'Executive Consultant of Drug and Medicines.',
-    speakerImg: 'images/speaker4.jpg',
+    speakerImg: 'images/Pharm.-Chidi-Okoro.jpeg',
     about:
       'Chidi Okoro teaches Strategy at Lagos Business School. He is currently the Founder/Executive Consultant of Drugs and Medicaments Nigeria Limited, a retail chain/own brands dealer in the Pharmaceutical sector.',
   },
@@ -65,7 +67,7 @@ const speakersDetails = [
     title: 'CEO, Advantage Health Africa',
     speakerImg: 'images/Abimbola-Adebakin.jpg',
     about:
-      'Nana Aba Anamoah is a Ghanaian award-winning media personality,news anchor, and broadcaster.',
+      'Abimbola is the Chief Executive Officer of Advantage Health Africa, an aggregator in the retail pharmacy space.',
   },
   {
     id: 6,
@@ -73,26 +75,33 @@ const speakersDetails = [
     title: 'Veteran Sports Journalist',
     speakerImg: 'images/Adedotun-Sulaiman.jpg',
     about:
-      ' Mr. Yeboah is a Ghanaian veteran sports journalist, writer and commentator.',
+      'Mr. Adedotun Sulaiman, MFR is a veteran Management and Strategy consultant, with over 25 years’ experience. He has been the head of 15 different companies and is the Executive Chairman of Arian Capital Limited.',
   },
 ];
 
+// Define a function to generate a random speaker from the array
 function randomSpeaker() {
-  speakers.innerHTML = speakersDetails
-    .map(
-      (speaker) => `
-           <div class="speakers-details">
-              <img src=${speaker.speakerImg} alt="UG Vice-chancellor" />
-              <div class="details">
-                <h4>${speaker.name}</h4>
-                <p class="title">${speaker.title}</p>
-                <hr />
-                <p class="position">${speaker.about}</p>
-              </div>
-            </div>
-  `
-    )
-    .join('');
+  // Use the map function to create a new array of speaker details HTML elements
+  const speakerDetailsHTML = speakersDetails.map(
+    (speaker) => `
+      <div class="speakers-details">
+        <img src="${speaker.speakerImg}" alt="Speaker Image" />
+        <div class="details">
+          <h4>${speaker.name}</h4>
+          <p class="title">${speaker.title}</p>
+          <hr />
+          <p class="position">${speaker.about}</p>
+        </div>
+      </div>
+    `
+  );
+
+  // Use the join function to concatenate the array of HTML elements into a string
+  const speakersHTML = speakerDetailsHTML.join('');
+
+  // Set the innerHTML of the speakers element to the generated HTML string
+  speakers.innerHTML = speakersHTML;
 }
 
+// Call the randomSpeaker function to generate a random speaker on page load
 randomSpeaker();
