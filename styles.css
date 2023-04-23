@@ -133,6 +133,10 @@ header nav .down ul {
   border: 2px solid #ec5242;
   padding: 0.4rem;
 }
+.acpn-logo {
+  max-width: 100%;
+  height: auto;
+}
 /* ============================MAIN STARTS=====================================*/
 main {
   background: url(images/main_big.png);
