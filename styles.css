@@ -316,6 +316,47 @@ main {
 }
 
 /* ABOUT SUB-SECTION ENDS */
+
+/* PARTNER STARTS */
+.partner {
+  background-color: #414246;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.partner h4 {
+  color: #fff;
+  padding: 2rem 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.partner hr {
+  border-bottom: 2px solid #ec5242;
+  width: 12%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.company-logo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 100%;
+}
+
+.company-logo img {
+  width: 100%;
+}
+
+.sponsor1 {
+  font-size: 1.7rem;
+  color: #a3a1a1;
+  margin-right: 1rem;
+}
+
+/* PARTNER ENDS */
 /* --------------------------------PROGRAM STARTS------------------------------*/
 .events {
   background: url('images/cross.svg');
@@ -621,7 +662,7 @@ footer {
     display: none;
   }
 
-  .ilc {
+  .acpn {
     width: 80%;
   }
 
@@ -656,12 +697,12 @@ footer {
 
   /* MAIN ENDS */
 
-  .summit-1 {
+  .meeting-start {
     height: 70vh;
     max-height: 70vh;
   }
 
-  .summit-2 {
+  .meeting-middle {
     height: 70vh;
     max-height: 70vh;
   }
@@ -670,7 +711,7 @@ footer {
     display: none;
   }
 
-  .sponsor {
+  .support {
     display: none;
   }
 
@@ -716,7 +757,7 @@ footer {
     margin: 3rem auto;
   }
 
-  .events-contents .content .icon i {
+  .events-content .content .icon i {
     font-size: 2.3rem;
   }
 
@@ -781,7 +822,7 @@ footer {
     cursor: pointer;
   }
 
-  #summit {
+  #meeting {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
@@ -799,11 +840,11 @@ footer {
     display: none;
   }
 
-  .sponsor {
+  .support {
     display: block;
   }
 
-  .logo-home {
+  .home-logo {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
@@ -861,7 +902,7 @@ footer {
     opacity: 0.7;
   }
 
-  .events-contents .content p {
+  .events-content .content p {
     font-size: 1.1rem;
   }
 }
