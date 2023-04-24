@@ -55,7 +55,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-This repo only takes you through how to build a portfolio webpage.
+This repo only takes you through how to build a webpage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
