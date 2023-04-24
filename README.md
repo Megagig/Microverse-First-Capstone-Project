@@ -1,4 +1,4 @@
-# Microverse-First-Capstone-Project
+# 📖 [Microverse-First-Capstone-Project] <a name="about-project"></a>
 
 <a name="readme-top"></a>
 
@@ -23,8 +23,6 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-
-# 📖 [Microverse-First-Capstone-Project] <a name="about-project"></a>
 
 **[Microverse-First-Capstone-Project]** takes you through how to build a portfolio webpage starting with mobile screen sizes.
 
