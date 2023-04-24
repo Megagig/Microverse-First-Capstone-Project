@@ -71,7 +71,7 @@ This repo only takes you through how to build a portfolio webpage.
 
 ## 🚶‍♂️ Walkthrough <a name="walkthrough"></a>
 
-- [Walkthrough Link](https://www.loom.com/)
+- [Walkthrough Link](https://www.loom.com/share/859a1aef413143d9809223a291932f60)
 
 <!-- GETTING STARTED -->
 
