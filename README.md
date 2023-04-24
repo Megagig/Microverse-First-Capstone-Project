@@ -24,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-**[Microverse-First-Capstone-Project]** takes you through how to build a portfolio webpage starting with mobile screen sizes.
+**[Microverse-First-Capstone-Project]** My first capstone project at micorverse focuses on building and developing a website that solves real world problems. This project is built with HTML, CSS and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
