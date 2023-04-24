@@ -528,6 +528,12 @@ footer {
   width: 600px;
   background: #fff;
 }
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: ;
+  justify-content: center;
+}
 
 .footer-content {
   padding: 3rem 0;
@@ -547,6 +553,13 @@ footer {
   font-weight: 900;
   font-size: 0.8rem;
   opacity: 0.8;
+}
+.footer-content .holder {
+  width: 600px;
+  margin-right: 150px;
+  border-right-width: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 /* FOOTER ENDS */
