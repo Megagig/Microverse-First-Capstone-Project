@@ -24,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-**[Microverse-First-Capstone-Project]** My first capstone project at micorverse focuses on building and developing a website that solves real world problems. This project is built with HTML, CSS and JavaScript.
+**[Microverse-First-Capstone-Project]** My first capstone project at micorverse focuses on building and developing a website that solves real world problems. It showcases a website for the conference of the association of Community Pharmacists of Nigeria. This project is built with HTML, CSS and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
