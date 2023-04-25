@@ -419,8 +419,7 @@ a.email {
 
 .events-content .content p {
   color: #fff;
-  margin: 0 auto;
-  width: 70%;
+  width: 55%;
 }
 
 .events-content .content .icon {
@@ -635,37 +634,12 @@ footer {
     margin: 0;
   }
   .content p {
-    margin: 0;
     text-align: justify;
     padding: 50px;
-    margin-left: 5px;
   }
   .word {
     margin-right: 10px;
   }
-
-  /* .events-content .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1.5rem;
-    cursor: pointer;
-  }
-
-  
-
-  .events-content .content .icon {
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .acpn {
-    width: 80%;
-  } */
-
   /* ===============================SPEAKERS================================== */
 
   .speakers-details {
