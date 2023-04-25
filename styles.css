@@ -22,8 +22,9 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+  max-width: 960px;
 }
 
 .no-scroll {
@@ -181,16 +182,17 @@ main {
   background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    #f40001,
-    #ec5242,
-    rgb(255, 64, 0),
-    rgb(255, 123, 0),
-    #a00000,
-    #f65112,
-    #ec5242
-  );
+  background-image:
+    -webkit-linear-gradient(
+      45deg,
+      #f40001,
+      #ec5242,
+      rgb(255, 64, 0),
+      rgb(255, 123, 0),
+      #a00000,
+      #f65112,
+      #ec5242
+    );
 }
 
 .main-opening .description {
@@ -415,12 +417,18 @@ a.email {
 }
 
 .events-content {
-  padding-bottom: 2rem;
-}
-
-.events-content .content p {
   color: #fff;
   width: 55%;
+}
+
+.para {
+  color: #fff;
+  width: 175px;
+  padding: 30px;
+}
+
+.para1 {
+  position: relative;
 }
 
 .events-content .content .icon {
@@ -518,7 +526,7 @@ a.email {
 /* FOOTER STARTS */
 
 footer {
-  width: 600px;
+  width: 100%;
   background: #2e2e2e;
 }
 
@@ -548,6 +556,12 @@ footer {
     font-size: 1rem;
     font-weight: 700;
   }
+
+  /* .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+  } */
 
   .main-opening h1 {
     font-size: 2rem;
@@ -637,10 +651,6 @@ footer {
 
   .icon h3 {
     margin: 0;
-  }
-
-  .content p {
-    padding: 30px;
   }
 
   .word {
