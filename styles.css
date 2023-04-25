@@ -21,7 +21,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.holder {
+.container {
   width: 88%;
   margin: 0 auto;
 }
@@ -79,7 +79,7 @@ header nav .down {
   background: #fff;
 }
 
-header nav .down .holder {
+header nav .down .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -366,14 +366,14 @@ a.email {
   margin-bottom: 1rem;
 }
 
-.company-logo {
+.logos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   width: 100%;
 }
 
-.company-logo img {
+.logos img {
   width: 100%;
 }
 
@@ -411,23 +411,10 @@ a.email {
   padding-bottom: 2rem;
 }
 
-.events-content .content {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  align-items: center;
-  gap: 2rem;
-  background-color: rgba(59, 62, 69, 0.4);
-  padding: 2rem 2rem 2rem 2rem;
-  margin-bottom: 1.5rem;
-}
-
 .events-content .content p {
   color: #fff;
-  font-weight: 700;
-  line-height: 1.6;
   margin: 0 auto;
   width: 70%;
-  text-align: center;
 }
 
 .events-content .content .icon {
@@ -531,15 +518,14 @@ footer {
 .sponsor-logos {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ;
   justify-content: center;
 }
 
 .footer-content {
   padding: 3rem 0;
   display: flex;
-  justify-content: space-between;
-  gap: 0.8rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .footer-content h5 {
@@ -554,7 +540,7 @@ footer {
   font-size: 0.8rem;
   opacity: 0.8;
 }
-.footer-content .holder {
+.footer-content .container {
   width: 600px;
   margin-right: 150px;
   border-right-width: 20px;
@@ -594,17 +580,16 @@ footer {
 
   .events-content .content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 5%;
+    padding: 0.5rem 1rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
   }
 
   .events-content .content p {
     width: 100%;
-    align-self: center;
   }
 
   .events-content .content .icon {
@@ -760,13 +745,13 @@ footer {
     display: none;
   }
 
-  .support {
+  .sponsor {
     display: none;
   }
 
-  footer {
+  /* footer {
     display: none;
-  }
+  } */
 
   #footer-about {
     display: block;
@@ -889,7 +874,7 @@ footer {
     display: none;
   }
 
-  .support {
+  .sponsor {
     display: block;
   }
 
