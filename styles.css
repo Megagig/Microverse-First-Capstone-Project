@@ -181,17 +181,16 @@ main {
   background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image:
-    -webkit-linear-gradient(
-      45deg,
-      #f40001,
-      #ec5242,
-      rgb(255, 64, 0),
-      rgb(255, 123, 0),
-      #a00000,
-      #f65112,
-      #ec5242
-    );
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f40001,
+    #ec5242,
+    rgb(255, 64, 0),
+    rgb(255, 123, 0),
+    #a00000,
+    #f65112,
+    #ec5242
+  );
 }
 
 .main-opening .description {
@@ -347,17 +346,15 @@ a.email {
 
 /* PARTNER STARTS */
 .partner {
-  background-color: #414246;
-  width: 100%;
-  padding-bottom: 3rem;
+  background-color: rgb(65, 66, 70);
+  padding: 50px 0;
 }
 
 .partner h4 {
-  color: #fff;
-  padding: 2rem 0 1rem;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 .partner hr {
@@ -367,23 +364,31 @@ a.email {
   margin-bottom: 1rem;
 }
 
-.logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.sponsor-list {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.logos img {
-  width: 100%;
+.sponsor-item {
+  margin-bottom: 30px;
 }
 
-.sponsor1 {
-  font-size: 1.7rem;
-  color: #a3a1a1;
-  margin-right: 1rem;
+.partner-logo {
+  width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
 }
 
+.partner-logo:hover {
+  filter: none;
+  transform: scale(1.1);
+}
 /* PARTNER ENDS */
 
 /* --------------------------------PROGRAM STARTS------------------------------ */
@@ -517,12 +522,6 @@ footer {
   background: #fff;
 }
 
-.sponsor-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .footer-content {
   padding: 3rem 0;
   display: flex;
@@ -569,9 +568,83 @@ footer {
     font-weight: 700;
   }
 
+  /* PARTNER STARTS */
+  .partner {
+    background-color: rgb(65, 66, 70);
+    padding: 50px 0;
+  }
+
+  .partner h4 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+
+  .partner hr {
+    border-bottom: 2px solid #ec5242;
+    width: 12%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .sponsor-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sponsor-item {
+    margin-bottom: 30px;
+  }
+
+  .partner-logo {
+    width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .partner-logo:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+  /* PARTNER ENDS */
   /* PROGRAM */
 
-  .events-content .content {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 100px 0;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  .icon i {
+    margin-right: 1rem;
+  }
+  .icon h3 {
+    margin: 0;
+  }
+  .content p {
+    margin: 0;
+    text-align: justify;
+    padding: 50px;
+    margin-left: 5px;
+  }
+  .word {
+    margin-right: 10px;
+  }
+
+  /* .events-content .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,9 +654,7 @@ footer {
     cursor: pointer;
   }
 
-  .events-content .content p {
-    width: 100%;
-  }
+  
 
   .events-content .content .icon {
     justify-content: center;
@@ -593,7 +664,7 @@ footer {
 
   .acpn {
     width: 80%;
-  }
+  } */
 
   /* ===============================SPEAKERS================================== */
 
@@ -742,9 +813,9 @@ footer {
     display: none;
   }
 
-  /* footer {
+  footer {
     display: none;
-  } */
+  }
 
   #footer-about {
     display: block;
@@ -871,13 +942,6 @@ footer {
     display: block;
   }
 
-  .home-logo {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    width: 100%;
-  }
-
   footer {
     width: 100%;
     background: #2e2e2e;
@@ -900,7 +964,7 @@ footer {
   }
 
   #footer-home {
-    background: #fff;
+    background: #2e2e2e;
   }
 
   #footer-home .container {
@@ -909,7 +973,7 @@ footer {
 
   #footer-home h5,
   #footer-home .footer-text {
-    color: #434247;
+    color: #fff;
   }
 }
 
