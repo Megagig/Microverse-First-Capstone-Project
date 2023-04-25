@@ -181,16 +181,17 @@ main {
   background-clip: initial;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    #f40001,
-    #ec5242,
-    rgb(255, 64, 0),
-    rgb(255, 123, 0),
-    #a00000,
-    #f65112,
-    #ec5242
-  );
+  background-image:
+    -webkit-linear-gradient(
+      45deg,
+      #f40001,
+      #ec5242,
+      rgb(255, 64, 0),
+      rgb(255, 123, 0),
+      #a00000,
+      #f65112,
+      #ec5242
+    );
 }
 
 .main-opening .description {
@@ -389,6 +390,7 @@ a.email {
   filter: none;
   transform: scale(1.1);
 }
+
 /* PARTNER ENDS */
 
 /* --------------------------------PROGRAM STARTS------------------------------ */
@@ -518,7 +520,7 @@ a.email {
 
 footer {
   width: 600px;
-  background: #fff;
+  background: #2e2e2e;
 }
 
 .footer-content {
@@ -529,13 +531,13 @@ footer {
 }
 
 .footer-content h5 {
-  color: #272a33;
+  color: #fff;
   font-weight: 900;
   font-size: 1.1rem;
 }
 
 .footer-content .footer-text {
-  color: #272a33;
+  color: #fff;
   font-weight: 900;
   font-size: 0.8rem;
   opacity: 0.8;
@@ -612,7 +614,9 @@ footer {
     filter: none;
     transform: scale(1.1);
   }
+
   /* PARTNER ENDS */
+
   /* PROGRAM */
 
   .content {
@@ -621,28 +625,35 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-    padding: 100px 0;
   }
+
   .icon {
     display: flex;
     align-items: center;
   }
+
   .icon i {
     margin-right: 1rem;
   }
+
   .icon h3 {
     margin: 0;
   }
+
   .content p {
-    text-align: justify;
-    padding: 50px;
+    padding: 30px;
   }
+
   .word {
     margin-right: 10px;
   }
-  .para {
-    text-align: center;
+
+  .events-content {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
   }
+
   /* ===============================SPEAKERS================================== */
 
   .speakers-details {
@@ -788,14 +799,6 @@ footer {
 
   .sponsor {
     display: none;
-  }
-
-  footer {
-    display: none;
-  }
-
-  #footer-about {
-    display: block;
   }
 }
 
