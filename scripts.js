@@ -104,4 +104,5 @@ function randomSpeaker() {
 }
 
 // Call the randomSpeaker function to generate a random speaker on page load
-randomSpeaker();
+document.addEventListener('load', randomSpeaker());
+// randomSpeaker();
